@@ -1,0 +1,7 @@
+Script started on 廿十七年十一月五日 (週日) 十六時六分廿七秒
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ python3.6 graph.py 
+g={'P1': ['R1'], 'P2': ['R3', 'R4', 'R5'], 'P3': ['R5'], 'P4': ['R2'], 'P5': [], 'R1': ['P2'], 'R2': ['P1'], 'R3': ['P5'], 'R4': ['P3'], 'R5': ['P4']}, cycle=['P1', 'R1', 'P2', 'R4', 'P3', 'R5', 'P4', 'R2', 'P1']
+g={'P1': ['P2'], 'P2': ['P3', 'P4', 'P5'], 'P3': ['P4'], 'P4': ['P1'], 'P5': []}, cycle=['P1', 'P2', 'P3', 'P4', 'P1']
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 廿十七年十一月五日 (週日) 十六時六分39秒

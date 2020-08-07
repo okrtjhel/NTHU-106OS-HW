@@ -1,0 +1,70 @@
+Script started on 廿十七年十一月十二日 (週日) 十八時廿二分六秒
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ python3.6 memalloc.py 
+a=malloc(10):
+ FirstFit symbols={'a': 0} holes=[(10, 10)] allocation={0: 10}
+ BestFit symbols={'a': 0} holes=[(10, 10)] allocation={0: 10}
+ WorstFit symbols={'a': 0} holes=[(10, 10)] allocation={0: 10}
+b=malloc(1):
+ FirstFit symbols={'a': 0, 'b': 10} holes=[(11, 9)] allocation={0: 10, 10: 1}
+ BestFit symbols={'a': 0, 'b': 10} holes=[(11, 9)] allocation={0: 10, 10: 1}
+ WorstFit symbols={'a': 0, 'b': 10} holes=[(11, 9)] allocation={0: 10, 10: 1}
+c=malloc(4):
+ FirstFit symbols={'a': 0, 'b': 10, 'c': 11} holes=[(15, 5)] allocation={0: 10, 10: 1, 11: 4}
+ BestFit symbols={'a': 0, 'b': 10, 'c': 11} holes=[(15, 5)] allocation={0: 10, 10: 1, 11: 4}
+ WorstFit symbols={'a': 0, 'b': 10, 'c': 11} holes=[(15, 5)] allocation={0: 10, 10: 1, 11: 4}
+free(c)
+ FirstFit symbols={'a': 0, 'b': 10} holes=[(11, 9)] allocation={0: 10, 10: 1}
+ BestFit symbols={'a': 0, 'b': 10} holes=[(11, 9)] allocation={0: 10, 10: 1}
+ WorstFit symbols={'a': 0, 'b': 10} holes=[(11, 9)] allocation={0: 10, 10: 1}
+free(a)
+ FirstFit symbols={'b': 10} holes=[(0, 10), (11, 9)] allocation={10: 1}
+ BestFit symbols={'b': 10} holes=[(0, 10), (11, 9)] allocation={10: 1}
+ WorstFit symbols={'b': 10} holes=[(0, 10), (11, 9)] allocation={10: 1}
+d=malloc(9):
+ FirstFit symbols={'b': 10, 'd': 0} holes=[(9, 1), (11, 9)] allocation={10: 1, 0: 9}
+ BestFit symbols={'b': 10, 'd': 11} holes=[(0, 10)] allocation={10: 1, 11: 9}
+ WorstFit symbols={'b': 10, 'd': 0} holes=[(9, 1), (11, 9)] allocation={10: 1, 0: 9}
+e=malloc(10):
+ FirstFit symbols={'b': 10, 'd': 0, 'e': None} holes=[(9, 1), (11, 9)] allocation={10: 1, 0: 9}
+ BestFit symbols={'b': 10, 'd': 11, 'e': 0} holes=[] allocation={10: 1, 11: 9, 0: 10}
+ WorstFit symbols={'b': 10, 'd': 0, 'e': None} holes=[(9, 1), (11, 9)] allocation={10: 1, 0: 9}
+------------------------
+a=malloc(3):
+ FirstFit symbols={'a': 0} holes=[(3, 17)] allocation={0: 3}
+ BestFit symbols={'a': 0} holes=[(3, 17)] allocation={0: 3}
+ WorstFit symbols={'a': 0} holes=[(3, 17)] allocation={0: 3}
+b=malloc(6):
+ FirstFit symbols={'a': 0, 'b': 3} holes=[(9, 11)] allocation={0: 3, 3: 6}
+ BestFit symbols={'a': 0, 'b': 3} holes=[(9, 11)] allocation={0: 3, 3: 6}
+ WorstFit symbols={'a': 0, 'b': 3} holes=[(9, 11)] allocation={0: 3, 3: 6}
+c=malloc(2):
+ FirstFit symbols={'a': 0, 'b': 3, 'c': 9} holes=[(11, 9)] allocation={0: 3, 3: 6, 9: 2}
+ BestFit symbols={'a': 0, 'b': 3, 'c': 9} holes=[(11, 9)] allocation={0: 3, 3: 6, 9: 2}
+ WorstFit symbols={'a': 0, 'b': 3, 'c': 9} holes=[(11, 9)] allocation={0: 3, 3: 6, 9: 2}
+d=malloc(5):
+ FirstFit symbols={'a': 0, 'b': 3, 'c': 9, 'd': 11} holes=[(16, 4)] allocation={0: 3, 3: 6, 9: 2, 11: 5}
+ BestFit symbols={'a': 0, 'b': 3, 'c': 9, 'd': 11} holes=[(16, 4)] allocation={0: 3, 3: 6, 9: 2, 11: 5}
+ WorstFit symbols={'a': 0, 'b': 3, 'c': 9, 'd': 11} holes=[(16, 4)] allocation={0: 3, 3: 6, 9: 2, 11: 5}
+free(a)
+ FirstFit symbols={'b': 3, 'c': 9, 'd': 11} holes=[(0, 3), (16, 4)] allocation={3: 6, 9: 2, 11: 5}
+ BestFit symbols={'b': 3, 'c': 9, 'd': 11} holes=[(0, 3), (16, 4)] allocation={3: 6, 9: 2, 11: 5}
+ WorstFit symbols={'b': 3, 'c': 9, 'd': 11} holes=[(0, 3), (16, 4)] allocation={3: 6, 9: 2, 11: 5}
+free(c)
+ FirstFit symbols={'b': 3, 'd': 11} holes=[(0, 3), (9, 2), (16, 4)] allocation={3: 6, 11: 5}
+ BestFit symbols={'b': 3, 'd': 11} holes=[(0, 3), (9, 2), (16, 4)] allocation={3: 6, 11: 5}
+ WorstFit symbols={'b': 3, 'd': 11} holes=[(0, 3), (9, 2), (16, 4)] allocation={3: 6, 11: 5}
+e=malloc(2):
+ FirstFit symbols={'b': 3, 'd': 11, 'e': 0} holes=[(2, 1), (9, 2), (16, 4)] allocation={3: 6, 11: 5, 0: 2}
+ BestFit symbols={'b': 3, 'd': 11, 'e': 9} holes=[(0, 3), (16, 4)] allocation={3: 6, 11: 5, 9: 2}
+ WorstFit symbols={'b': 3, 'd': 11, 'e': 16} holes=[(0, 3), (9, 2), (18, 2)] allocation={3: 6, 11: 5, 16: 2}
+free(b)
+ FirstFit symbols={'d': 11, 'e': 0} holes=[(2, 9), (16, 4)] allocation={11: 5, 0: 2}
+ BestFit symbols={'d': 11, 'e': 9} holes=[(0, 9), (16, 4)] allocation={11: 5, 9: 2}
+ WorstFit symbols={'d': 11, 'e': 16} holes=[(0, 11), (18, 2)] allocation={11: 5, 16: 2}
+f=malloc(11):
+ FirstFit symbols={'d': 11, 'e': 0, 'f': None} holes=[(2, 9), (16, 4)] allocation={11: 5, 0: 2}
+ BestFit symbols={'d': 11, 'e': 9, 'f': None} holes=[(0, 9), (16, 4)] allocation={11: 5, 9: 2}
+ WorstFit symbols={'d': 11, 'e': 16, 'f': 0} holes=[(18, 2)] allocation={11: 5, 16: 2, 0: 11}
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 廿十七年十一月十二日 (週日) 十八時廿二分十五秒

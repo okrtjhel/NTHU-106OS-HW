@@ -1,0 +1,12 @@
+Script started on 廿十七年十月廿九日 (週日) 十二時九分卅一秒
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ scriptpython3 hw5.py[8Pscript[Kscriptpython3 hw5.py[3Pcd Desktop/python3 hw5.py[3Pcd Desktop/python3 hw5.py[K[K[K[K[K[Kmp[K[Knpsched.py 
+tasks = [Task('A', 0, 7), Task('B', 2, 4), Task('C', 4, 1), Task('D', 5, 4)]
+nonpreemptive SJF: A-A-A-A-A-A-A-C-B-B-B-B-D-D-D-D-None-None-None-None
+  thruput = (4, 16) = 0.25, waittimes = (16, 4) = 4.00, turnaroundtime = (32, 4) = 8.00
+nonpreemptive FCFS: A-A-A-A-A-A-A-B-B-B-B-C-D-D-D-D-None-None-None-None
+  thruput = (4, 16) = 0.25, waittimes = (19, 4) = 4.75, turnaroundtime = (35, 4) = 8.75
+nonpreemptive RR: A-A-A-A-A-A-A-B-B-B-B-C-D-D-D-D-None-None-None-None
+  thruput = (4, 16) = 0.25, waittimes = (19, 4) = 4.75, turnaroundtime = (35, 4) = 8.75
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 廿十七年十月廿九日 (週日) 十二時九分56秒

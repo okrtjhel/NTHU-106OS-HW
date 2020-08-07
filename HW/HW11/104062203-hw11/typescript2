@@ -1,0 +1,10 @@
+Script started on 廿十七年十二月十三日 (週三) 八時卅分九秒
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ pytohn[K[K[Khon [K3.6 proc.py 
+input directory tree=('/', ('home/', ('u1/', 'hello.c'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+tuple reconstructed from directory=('/', ('home/', ('u1/', 'hello.c'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+creation time for /home/u1/hello.c is Wed Dec 13 08:30:20 2017
+f2 read=hello
+f2 read=world
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 廿十七年十二月十三日 (週三) 八時卅分廿二秒

@@ -1,0 +1,19 @@
+Script started on 廿十七年十二月十三日 (週三) 八時廿九分九秒
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ pytoh[K[Khon3.6 pfs.py 
+input directory tree=('/', ('home/', ('u1/', 'hello.c', 'myfriend.h'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+freeblocks={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
+allocate (5)a={0, 1, 2, 3, 4}, (3)b={5, 6, 7}, (2)c={8, 9}, (1)d={10}, (4)e={11, 12, 13, 14}
+freeBlockSet={15}
+after freeBlocks({5, 6, 7}), freeBlockSet={5, 6, 7, 15}
+after freeBlocks({10}), freeBlockSet={5, 6, 7, 10, 15}
+after allocateBlocks(4)={7, 5, 6, 15}, freeBlockSet={10}
+after freeBlocks(a|c)={0, 1, 2, 3, 4, 8, 9}, freeBlockSet={0, 1, 2, 3, 4, 8, 9, 10}
+directory=('/', ('home/', ('u1/', 'hello.c', 'myfriend.h'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+last modification date for /home/u1/ is Wed Dec 13 08:29:20 2017
+after renaming=('/', ('home/', ('u1/', 'goodbye.py', 'myfriend.h'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+last modification date for /home/u1/ is Wed Dec 13 08:29:25 2017
+after moving=('/', ('home/', ('u1/', 'goodbye.py'), ('u2/', 'world.h', 'myfriend.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+after moving=('/', ('home/', ('u1/', 'goodbye.py', ('etc/',)), ('u2/', 'world.h', 'myfriend.h'), 'homefiles'), ('bin/', 'ls'))
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 廿十七年十二月十三日 (週三) 八時廿九分廿七秒

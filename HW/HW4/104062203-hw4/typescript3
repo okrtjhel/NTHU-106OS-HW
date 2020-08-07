@@ -1,0 +1,10 @@
+Script started on 廿十七年十月十三日 (週五) 廿三時十四分一秒
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ scripttime python3 qsortTh.py [13Pcd Desktop/time python3 qsortTh.pyscript[Kpython3 qsortTh.py script[Ktime python3 qsortTh.py[12Pcd Desktop/time python3 qsortTh.py script[K[Ktim[K[K[Kcc -pthread qsortTh.c -o qsortTh
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ time ./ [KqsortTh
+
+real	0m10.544s
+user	0m9.520s
+sys	0m0.316s
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 廿十七年十月十三日 (週五) 廿三時十四分45秒

@@ -1,0 +1,12 @@
+Script started on 廿十七年十二月十三日 (週三) 四時32分廿二秒
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ python3.6 pfs.py 
+input directory tree=('/', ('home/', ('u1/', 'hello.c', 'myfriend.h'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+directory=('/', ('home/', ('u1/', 'hello.c', 'myfriend.h'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+last modification date for /home/u1/ is Wed Dec 13 04:32:29 2017
+after renaming=('/', ('home/', ('u1/', 'goodbye.py', 'myfriend.h'), ('u2/', 'world.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+last modification date for /home/u1/ is Wed Dec 13 04:32:34 2017
+after moving=('/', ('home/', ('u1/', 'goodbye.py'), ('u2/', 'world.h', 'myfriend.h'), 'homefiles'), ('bin/', 'ls'), ('etc/',))
+after moving=('/', ('home/', ('u1/', 'goodbye.py', ('etc/',)), ('u2/', 'world.h', 'myfriend.h'), 'homefiles'), ('bin/', 'ls'))
+]0;nthu-os@nthuos-VirtualBox: ~/Desktop[01;32mnthu-os@nthuos-VirtualBox[00m:[01;34m~/Desktop[00m$ exit
+
+Script done on 廿十七年十二月十三日 (週三) 四時32分35秒
